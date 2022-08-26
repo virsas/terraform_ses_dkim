@@ -23,7 +23,7 @@ Terraform module to register DKIM for domain identity and create records to rout
 # Module
 ##############
 module "ses_dkim_example" {
-  source = "github.com/virsas/terraform_ses_dkim"
+  source = "git::https://github.com/virsas/terraform_ses_dkim.git?ref=v1.0.0"
   domain = module.ses_domain_example.domain
   zone = module.route53_example_org.zone_id
 }
